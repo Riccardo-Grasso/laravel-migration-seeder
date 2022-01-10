@@ -17,8 +17,8 @@ class CreatePackagesTable extends Migration
             $table->id();
             $table->string("package_name", 255)->default("Titolo pacchetto viaggio");
             $table->text("description");
-            $table->date("date_start");
-            $table->date("date_end");
+            $table->dateTime("date_start");
+            $table->dateTime("date_end");
             $table->decimal('price', 7, 2);
             $table->timestamps();
         });
